@@ -2,12 +2,14 @@ import React from 'react'
 import {Button, Avatar ,Menu , Typography} from 'antd'
 import {Link} from  'react-router-dom'; 
 import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined } from '@ant-design/icons';
+import CryptoWorldLogo from './Images/CryWorld.png';
+
 const Navbar = () => {
   return (
     <div className='nav-container'>
     
        <div className="logo-container">
-        <Avatar src='' size='large' />
+        <Avatar src={CryptoWorldLogo} size='large' />
         <Typography.Title level={2} className='logo'> 
           <Link to='/'> CryptoWorld</Link>
         </Typography.Title>
